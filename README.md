@@ -12,7 +12,7 @@ You can see and conclude that group "a customers" tend to have a much higher CTR
 
 ## 2.Which results do people tend to try first? How does it change day by day?
 We can tell which page has been visited by getting building "result_position variable" of the page that was visisted, we do this using the groupby by day, session_id and result position. (we are interest in values that exist, that means that the result must be grater than 0), then we print the headers to see how is going:  
-Then we run the code over the number of days and count the result_positions of the pages that were first visited and order them by result_position. (I hold only the first 10 result positions becasuse after that we see that the number is practically meaningless).  
+Then we run the code over the number of days and count the result_positions of the pages that were first visited and order them by result_position. we sort the dataframe is in chronological order so we can tell that the result we get back is based by the first search (I hold only the first 10 result positions becasuse after that we see that the number is practically meaningless).  
 Looking at the results we can make some preliminar observations like:  
   
 
