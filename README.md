@@ -1,3 +1,8 @@
+The notebook report is in the src/ folder. 
+
+The data is a gzip file which is in data/ folder.
+
+
 # Requirements
 
 1) Python (3.x)
