@@ -14,8 +14,18 @@ You can see and conclude that group "a customers" tend to have a much higher CTR
 We can tell which page has been visited by getting building "result_position variable" of the page that was visisted, we do this using the groupby by day, session_id and result position. (we are interest in values that exist, that means that the result must be grater than 0), then we print the headers to see how is going:  
 Then we run the code over the number of days and count the result_positions of the pages that were first visited and order them by result_position. (I hold only the first 10 result positions becasuse after that we see that the number is practically meaningless).  
 Looking at the results we can make some preliminar observations like:  
+  
+
+## 3.What is their daily overall zero results rate? How does it vary between the groups?  
+KeFirst we keep only the day of our date, and because we are only interested this time in the zeros we just study where  'n_results'=0 and divide by the number of searches, this should give us the the zero rate for each day  
+Then we create "zero_res_groups" which is made the same way as above, but also group by the 'group', that is telling me if the session is in 'group a' or in 'group b' and we use the previous results to see that:  
+The average zero rate is almost the double in group b than group a. 
+
+
+# Summarize of relevant findings:
 1. The first result is the most popular, somehow it makes sense because (asusuming that usually the IT and crm team assign the marks in the web in order they will appear to customers and in order of relevance also, so you offer the most interesting and engaging webs first, then the second one ando so on...)
-2. Also you can see that the clicks have some kind of stationality, where it shows that most days the first search results get about 2300-2500 clicks, but it drops in click rate for the first search result occurs on the 5th day. We can also see the same pattern occurs for the click rate on the second search result
+2. Also you can see that the clicks have some kind of stationality, where it shows that most days the first search results get about 2300-2500 clicks, but it drops in click rate for the first search result occurs on the 5th day. We can also see the same pattern happens for the clickrate for the second result
+3.when analizing the zeros you see that it makes sense with the prevous information, since group b has a smaller clickthrough rate and having zero search results would result in less clickthroughs.
 
 
 
